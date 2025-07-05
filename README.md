@@ -54,7 +54,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 8인 동시 경기, WebSocket 실시간 동기화, JWT + OTP 인증, Docker Compose 배포.
 
-▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascention)
+▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascension)
 
 ---
 
