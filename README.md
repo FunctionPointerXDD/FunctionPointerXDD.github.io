@@ -1,5 +1,3 @@
----
-
 # 👨‍💻 Portfolio – 정찬수
 
 > Economic‑minded problem solver turned systems programmer – specialising in C‑based low‑latency back‑end & security‑conscious network software.
