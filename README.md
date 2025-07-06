@@ -58,6 +58,14 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ---
 
+### 🗄️ PhoneBook Database *(solo, C/C++)*  `2024-07`
+
+1만개 이상의 사용자 이름, 주소, 연락처를 저장할 수 있는 주소록 구현. 벡터와 이진탐색으로 인덱싱 구현. 테스트를 통해 기본 쿼리와 인덱싱 적용 쿼리의 속도 차이 비교. 
+
+▶ [Source Code](https://github.com/FunctionPointerXDD/network_assignment)
+
+---
+
 ## 🏆 Highlights
 
 * 42Seoul **Common Core** complete – 중급 시스템 프로그래밍 역량 공인
