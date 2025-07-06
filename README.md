@@ -1,15 +1,15 @@
 # 👨‍💻 Portfolio – 정찬수
 
-> Economic‑minded problem solver turned systems programmer – specialising in C‑based low‑latency back‑end & security‑conscious network software.
+> Economic‑minded problem solver turned systems programmer
 
 ---
 
 ## 👋 About Me
 
-경제학에서 훈련한 분석적 사고와 데이터 기반 의사결정 능력을 바탕으로 **시스템 프로그래밍 · 네트워크 보안**를 만드는 데 집중하고 있습니다. 42Seoul 공통 과정을 수료하며 C 언어로 운영체제 레벨 문제를 해결했고, Docker·Kubernetes 환경에서 배포 자동화와 성능 최적화 경험을 쌓았습니다.
+이것저것 세상 모든 것에 호기심이 많은 사람입니다. 남들이 다 아는 사실이더라도 다른 관점으로 보거나 본질을 찾으려고 노력합니다. 경제학을 전공했지만 IT에도 관심이 많아 독학을 하다가 42Seoul이라는 교육기관을 통해서 개발자가 되기로 마음 먹었습니다. 끝없이 공부해야 한다는 점이 매력적인 직업이라고 생각합니다. 
 
-* **Current goal** : 저지연(ultra‑low‑latency) 시스템 및 네트워크 보안 솔루션 엔지니어
-* **Interests** : lock‑free 구조, order‑book simulation, eBPF, QUIC/HTTP 3, kernel optimisations, HPC
+* **Current goal** : 저지연(ultra‑low‑latency) 시스템 및 네트워크 보안 솔루션 개발자
+* **Interests** : lock‑free , HPC, Golang, Compiler, Assembly 
 
 ---
 
@@ -17,10 +17,10 @@
 
 |  Category              |  Tools                                                          |
 | ---------------------- | --------------------------------------------------------------- |
-| **Languages**          |  C / C++ / Python / JavaScript                                  |
-| **Systems**            |  POSIX API, pthread, epoll/poll, shared‑memory, TCP/UDP sockets |
-| **Frameworks & Infra** |  Django, Nginx, Docker, GitHub Actions, PostgreSQL              |
-| **Tooling**            |  GCC/GDB, Valgrind, Make, Clang‑Tidy, Git Flow                  |
+| **Languages**          |  C / C++ / Python / Java                                        |
+| **Systems**            |  POSIX API, pthread, epoll/poll, TCP/UDP sockets                |
+| **Frameworks & Infra** |  Django, Nginx, Docker, GitHub, PostgreSQL                      |
+| **Tooling**            |  GCC/GDB, Valgrind, Makefile, Git Flow                          |
 
 ---
 
@@ -36,7 +36,7 @@ Bash‑like 셸 구현 – `fork/execve`, 파이프 & 리디렉션, 시그널 �
 
 ### 🌐 Webserv *(3‑person team, C++)*  `2024‑11 → 2025‑01`
 
-HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, 가상 호스트, CGI (Python), 쿠키 기반 세션. Keep‑Alive & Chunked Transfer 구현 → **1500 req/s**@local VM. 
+HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, CGI (Python), 쿠키 기반 세션. Keep‑Alive & Chunked Transfer 구현 → **1500 req/s**@local VM. 
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/webserv)
 
@@ -44,7 +44,7 @@ HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, 가상 호스트, CGI (Pytho
 
 ### 🍴 Philosophers *(solo, C)*  `2024‑03 → 04`
 
-Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)** 두 버전으로 구현. 비대칭 포크 획득 + 모니터 스레드로 **데드락·굶주림(starvation) 방지** 보장. 동기화 primitive 성능·정확도 비교 리포트 포함.
+Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)** 두 버전으로 구현. 비대칭 포크 획득 + 모니터 스레드로 **데드락·굶주림(starvation) 방지** 보장. 동기화 성능·정확도 비교.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/philo)
 
@@ -52,7 +52,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 🏓 Real‑time Ping‑Pong Game *(5‑person, Django & WebSocket)*  `2025‑01 → 02`
 
-8인 동시 경기, WebSocket 실시간 동기화, JWT + OTP 인증, Docker Compose 배포.
+8인 동시 경기, WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascension)
 
