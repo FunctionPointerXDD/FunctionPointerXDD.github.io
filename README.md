@@ -66,6 +66,13 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ---
 
+## 운영체제 스터디 `2024-04 -> 08`
+
+Operting System Concepts 10th 원문을 학습 및 노션에 정리(1,2장과 부록만 제외하고 모든 장 학습). 5개월간 8명의 팀원들과 함께 매주 목요일 마다 모여서 각자 맡은 분량을 발표 및 토의함. 컴퓨터 구조와 운영체제 전반에 대한 이론적 지식 습득.
+▶ [Notion](https://lean-taurus-898.notion.site/Operating-System-Concepts-10th-da775c8c55ec41e692534e5db02760a6?pvs=74)
+
+---
+
 ## 🏆 Highlights
 
 * 42Seoul **Common Core** complete – 중급 시스템 프로그래밍 역량 공인
