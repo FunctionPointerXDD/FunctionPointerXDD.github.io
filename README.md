@@ -60,7 +60,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 🏓 Real‑time Ping‑Pong Game *(5‑person, Django & WebSocket)*  `2025‑01 → 02`
 
-탁구 게임 웹서비스를 구현했습니다. 최대 8인 토너먼트 방식으로 만들었으며 적용된 기능은 다음과 같습니다.  -> WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
+탁구 게임 웹서비스를 구현했습니다. 최대 8인 토너먼트 방식으로 플레이가 가능하게 구현했으며 적용된 기능들은 다음과 같습니다.  -> WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascension)
 
@@ -78,7 +78,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 운영체제 스터디 `2024-04 -> 08`
 
-Operting System Concepts 10th 원문을 학습 및 노션에 정리(1,2장과 부록만 제외하고 모든 장 학습). 5개월간 8명의 팀원들과 함께 매주 목요일 마다 모여서 각자 맡은 분량을 발표 및 토의함. 컴퓨터 구조와 운영체제 전반에 대한 이론적 지식 습득.
+Operting System Concepts 10th 원문을 학습 및 노션에 정리했습니다.(1,2장과 부록만 제외하고 모든 장 학습). 5개월간 8명의 팀원들과 함께 매주 목요일 마다 모여서 각자 맡은 분량을 발표 및 토의하였습니다. 이를 통해 컴퓨터 구조와 운영체제 전반에 대한 이론적 지식 습득할 수 있었습니다.
 
 ▶ [Notion](https://lean-taurus-898.notion.site/Operating-System-Concepts-10th-da775c8c55ec41e692534e5db02760a6?pvs=74)
 piano Jung이라는 아이디로 활동
