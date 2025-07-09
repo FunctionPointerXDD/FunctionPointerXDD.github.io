@@ -6,10 +6,10 @@
 
 ## 👋 About Me
 
-이것저것 세상 모든 것에 호기심이 많은 사람입니다. 남들이 다 아는 사실이더라도 다른 관점으로 보거나 본질을 찾으려고 노력합니다. 경제학을 전공했지만 IT에도 관심이 많아 독학을 하다가 42Seoul이라는 교육기관을 통해서 개발자가 되기로 마음 먹었습니다. 끝없이 공부해야 한다는 점이 매력적인 직업이라고 생각합니다. 
+세상 모든 것에 호기심이 많은 사람입니다. 남들이 다 아는 사실이더라도 다른 관점으로 보거나 본질을 찾으려고 노력합니다. 경제학을 전공하면서 IT에도 관심이 많아 독학을 하다가 42Seoul이라는 교육기관을 통해서 개발자가 되기로 마음 먹었습니다. 끝없이 공부해야 한다는 점이 매력적인 직업이라고 생각합니다.
 
 * **Current goal** : 저지연(ultra‑low‑latency) 시스템 및 네트워크 보안 솔루션 개발자
-* **Interests** : lock‑free , HPC, Golang, Compiler, Assembly 
+* **Interests** : lock‑free , HPC, Compiler, Assembly, Golang
 
 ---
 
@@ -28,15 +28,23 @@
 
 ### 🐚 Minishell *(2‑person team, C)*  `2024‑02 → 03`
 
-Bash‑like 셸 구현 – `fork/execve`, 파이프 & 리디렉션, 시그널 처리, heredoc, 환경변수 파싱. **리눅스 시스템 콜** 흐름을 심층 학습하고 메모리·FD 누수를 **Valgrind** 및 자체 leak checker로 검증.
+Bash와 유사한 셸을 구현했습니다. `fork/execve`, 파이프 & 리디렉션, 시그널 처리, heredoc, 환경변수 파싱을 모두 직접 적용하고 구현했습니다.  **리눅스 시스템 콜** 흐름을 심층 학습하고 메모리·FD 누수를 **Valgrind** 및 자체 leak checker로 검증했습니다. 크게 사용자 입력 파싱과 파싱된 명령어를 실행하는 부분으로 나누어서 프로젝트 진행하였는데 저는 실행부를 담당하였고 엣지 케이스까지 최대한 고려하여 완성하였습니다. 
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/minishell)
 
 ---
 
+###  MiniRT *(2‑person team, C)*  `2024‑05 → 07`
+
+레이 트레이싱(Ray-Tracing)을 구현해서 3D 도형(구, 원기둥, 평면, 원뿔, 질감)을 구현했습니다. 저는 필요한 파일을 파싱, 그리고 스레드를 CPU코어 수를 고려해서 생성하고 이미지를 분할하여 렌더링하였습니다. 그 덕분에 다수의 도형이 들어간 이미지의 기존 렌더링 시간이 1분이상 소요가 되었는데 7초 이내로 단축하는 경험을 했습니다.
+
+▶ [Source Code](https://github.com/FunctionPointerXDD/miniRT)
+
+---
+
 ### 🌐 Webserv *(3‑person team, C++)*  `2024‑11 → 2025‑01`
 
-HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, CGI (Python), 쿠키 기반 세션. Keep‑Alive & Chunked Transfer 구현 → **1500 req/s**@local VM. 
+HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, CGI (Python), 쿠키 기반 세션. Keep‑Alive & Chunked Transfer 구현했습니다. 그리고 Siege로 서버 부하 테스트를 하면서 성능 검증을 하였고 추가적인 최적화 작업을 통해 1MB이상의 파일을 읽는 요청에서 느려지는 부분을 개선하는 경험을 했습니다.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/webserv)
 
@@ -44,7 +52,7 @@ HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, CGI (Python), 쿠키 기반 
 
 ### 🍴 Philosophers *(solo, C)*  `2024‑03 → 04`
 
-Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)** 두 버전으로 구현. 비대칭 포크 획득 + 모니터 스레드로 **데드락·굶주림(starvation) 방지** 보장. 동기화 성능·정확도 비교.
+Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)** 두 버전으로 구현했습니다. 교착상태(Deadlock)을 방지하기 위해 홀수번째와 짝수번째 철학자를 번갈아 가면서 진행시켰고(스레드 시그널 함수는 사용하지 않았습니다.) 굶주림(starvation)을 방지하기 위해 모니터링 스레드를 구현해서 철학자의 상태를 계속 체크했습니다. 스레드 방식의 시뮬레이션에서 200명의 철학자를 테스트 하면서 30분 동안 5ms 이내로 지연(delay)되지 않는 점도 확인했습니다.     
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/philo)
 
@@ -52,7 +60,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 🏓 Real‑time Ping‑Pong Game *(5‑person, Django & WebSocket)*  `2025‑01 → 02`
 
-8인 동시 경기, WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
+탁구 게임 웹서비스를 구현했습니다. 최대 8인 토너먼트 방식으로 만들었으며 적용된 기능은 다음과 같습니다.  -> WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascension)
 
@@ -60,7 +68,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 🗄️ PhoneBook Database *(solo, C/C++)*  `2024-07`
 
-1만개 이상의 사용자 이름, 주소, 연락처를 저장할 수 있는 주소록 구현. 벡터와 이진탐색으로 인덱싱 구현. 테스트를 통해 기본 쿼리와 인덱싱 적용 쿼리의 속도 차이 비교. 
+1만개 이상의 사용자 이름, 주소, 연락처를 저장할 수 있는 주소록을 구현했습니다.  벡터와 이진탐색으로 인덱싱 기능을 추가했고,  테스트를 통해 기본 쿼리와 인덱싱 적용 쿼리의 속도 차이 비교하여 최대 10배 차이가 발생하는 것을 확인했습니다.  
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/network_assignment)
 
