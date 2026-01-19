@@ -16,10 +16,11 @@
 | ---------------------- | --------------------------------------------------------------- |
 | **Languages**          |  C / C++ / Python / Java / Go                                   |
 | **Systems**            |  POSIX API, pthread, poll, TCP/UDP sockets                      |
-| **Frameworks & Infra** |  Django, FastAPI, React, Nginx, PostgreSQL, Redis, Docker, AWS, GitHub |
+| **Frameworks & Infra** |  Django, FastAPI, React, Nginx, PostgreSQL, Redis, Docker, AWS  |
 | **Tooling**            |  GCC/GDB, Valgrind, Makefile, Git Flow                          |
 | **Protocols**          |  HTTP/1.1, WebSocket, REST API                                  |
 | **AI API**             |  Vertex AI(Gemini Vision API, Imagen3)                          |
+
 ---
 
 ## 📂 Projects
