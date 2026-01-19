@@ -15,10 +15,11 @@
 |  Category              |  Tools                                                          |
 | ---------------------- | --------------------------------------------------------------- |
 | **Languages**          |  C / C++ / Python / Java / Go                                   |
-| **Systems**            |  POSIX API, pthread, epoll/poll, TCP/UDP sockets                |
-| **Frameworks & Infra** |  Django, Nginx, Docker, GitHub, PostgreSQL                      |
+| **Systems**            |  POSIX API, pthread, poll, TCP/UDP sockets                |
+| **Frameworks & Infra** |  Django, FastAPI, React, Nginx, PostgreSQL, Redis, Docker, AWS, GitHub |
 | **Tooling**            |  GCC/GDB, Valgrind, Makefile, Git Flow                          |
-
+| **Protocols**          |  HTTP/1.1, WebSocket, REST API                                  |
+| **AI API**             |  Vertex AI(Gemini Vision API, Imagen3)                          |
 ---
 
 ## 📂 Projects
@@ -39,7 +40,7 @@ Bash와 유사한 셸을 구현했습니다. `fork/execve`, 파이프 & 리디�
 
 ---
 
-### 🌐 Webserv *(3‑person team, C++)*  `2024‑11 → 2025‑01`
+### 🌐 Webserv *(2‑person team, C++)*  `2024‑11 → 2025‑01`
 
 HTTP/1.1 웹 서버. Poll 기반 논블로킹 I/O, CGI (Python), 쿠키 기반 세션. Keep‑Alive & Chunked Transfer 구현했습니다. 그리고 Siege로 서버 부하 테스트를 하면서 성능 검증을 하였고 추가적인 최적화 작업을 통해 1MB이상의 파일을 읽는 요청에서 느려지는 부분을 개선하는 경험을 했습니다.
 
@@ -71,6 +72,14 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ---
 
+### 🕵️‍♀️ Hidden Catch *(3‑person team, React & FastAPI)*  `2025-11 -> 12`
+
+Google Gemini와 Imagen API를 활용해 사용자가 업로드한 이미지로 **틀린그림찾기 퀴즈를 자동 생성**하는 웹 게임입니다. **FastAPI**와 **Celery(Redis)**를 사용해 AI 이미지 생성 작업을 비동기로 처리함으로써 사용자 대기 시간을 효율적으로 관리했습니다. **React** 기반의 인터랙티브한 UI를 구현하고 **Docker Compose**와 **AWS(EC2, RDS, S3)**를 활용해 배포 자동화 및 서비스 운영 환경을 구축했습니다.
+
+▶ [Source Code](https://github.com/FunctionPointerXDD/hidden-catch1)
+
+---
+
 ## 스터디 활동
 
 ### 운영체제 스터디 `2024-04 -> 08`
@@ -84,6 +93,7 @@ piano Jung이라는 아이디로 활동
 
 ## 🏆 Highlights
 
+* **이노베이션 아카데미 코디세이 텀 프로젝트 우수상** (2025.12) - *Hidden Catch 프로젝트*
 * 42Seoul **Common Core** complete – 중급 시스템 프로그래밍 역량 공인
 * Git Flow & PR Review 문화에서 25+ merge 경험
 * Valgrind, tcpflow, siege 활용으로 **성능·안정성 문제** 해결 
