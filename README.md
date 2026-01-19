@@ -15,7 +15,7 @@
 |  Category              |  Tools                                                          |
 | ---------------------- | --------------------------------------------------------------- |
 | **Languages**          |  C / C++ / Python / Java / Go                                   |
-| **Systems**            |  POSIX API, pthread, poll, TCP/UDP sockets                |
+| **Systems**            |  POSIX API, pthread, poll, TCP/UDP sockets                      |
 | **Frameworks & Infra** |  Django, FastAPI, React, Nginx, PostgreSQL, Redis, Docker, AWS, GitHub |
 | **Tooling**            |  GCC/GDB, Valgrind, Makefile, Git Flow                          |
 | **Protocols**          |  HTTP/1.1, WebSocket, REST API                                  |
