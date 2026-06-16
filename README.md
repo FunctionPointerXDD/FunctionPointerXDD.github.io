@@ -59,7 +59,7 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 
 ### 🏓 Real‑time Ping‑Pong Game *(5‑person, Django & WebSocket)*  `2025‑01 → 02`
 
-탁구 게임 웹서비스를 구현했습니다. 최대 8인 토너먼트 방식으로 플레이가 가능하게 구현했으며 적용된 기능들은 다음과 같습니다.  -> WebSocket 실시간 동기화, JWT + 2FA인증, 유저 프로필, 통계 대시 보드, Docker Compose 배포.
+탁구 게임 웹서비스를 구현했습니다. 최대 8인 토너먼트 방식으로 플레이가 가능하게 구현했으며 적용된 기능들은 다음과 같습니다.  -> WebSocket 실시간 동기화, JWT + 2FA인증, RESTful api, Docker Compose 배포.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/42-ascension)
 
@@ -78,6 +78,14 @@ Dining Philosophers 문제를 **스레드(mutex)** / **프로세스(semaphore)*
 Google Gemini와 Imagen API를 활용해 사용자가 업로드한 이미지로 **틀린그림찾기 퀴즈를 자동 생성**하는 웹 게임입니다. **FastAPI**와 **Celery(Redis)**를 사용해 AI 이미지 생성 작업을 비동기로 처리함으로써 사용자 대기 시간을 효율적으로 관리했습니다. **React** 기반의 인터랙티브한 UI를 구현하고 **Docker Compose**와 **AWS(EC2, RDS, S3)**를 활용해 배포 자동화 및 서비스 운영 환경을 구축했습니다.
 
 ▶ [Source Code](https://github.com/FunctionPointerXDD/hidden-catch1)
+
+---
+
+### 🔐 MCP Gateway *(solo, Go & React)*  `2026‑04`
+
+금융 도메인을 위한 **MCP(Model Context Protocol) 게이트웨이** PoC입니다. 다수의I에이전트가 은행 백엔드 서비스를 안전하게 호출할 수 있도록 중앙화된 라우팅·감사·권한 관리 인프라를 구현했습니다. 부서별 독립 VMCP 인스턴스로 접근 권한을 격리하고, 모든 툴 호출을 PostgreSQL에 기록합니다. 12개 이상의 목 MCP 서버(계좌·대출·외환·투자·컴플라이언스 등)를 구성하고, SSE 기반 실시간 대시보드와 긴급 툴 차단/허용 기능을 통해 운영 중 동적 도구 관리가 가능하도록 구현했습니다.
+
+▶ [Source Code](https://github.com/FunctionPointerXDD/mcp-gateway)
 
 ---
 
